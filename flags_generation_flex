@@ -1,0 +1,18 @@
+-s structures/prepacked_intermediate_after_docking/docked_file_wo_side_chain_flexpep_prepack_0001.pdb
+-native structures/docked_intermediate/docked_file_wo_side_chain.pdb
+-unboundrot structures/docked_intermediate/docked_file_wo_side_chain.pdb
+
+-database lib/rosetta/database
+-pep_refine
+
+-ex1
+-ex2aro
+
+-use_input_sc
+
+-out:nstruct 100
+
+-out:file:fullatom
+-out:path:all structures/pep_docked_output
+-out:suffix _flexpep_generation
+

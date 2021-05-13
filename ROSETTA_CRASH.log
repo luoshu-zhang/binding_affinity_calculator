@@ -1,0 +1,176 @@
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.37+release.3ba1aaa
+[COMMIT_DATE]: 2020-09-09T03:36:18.109196
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "9.3.0"
+[STDLIB]: libstdc++ version 20200408
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(backtrace_string[abi:cxx11](int)+0x5a) [0x7f3d4f674eca]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x103) [0x7f3d4f674593]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(+0x19dd44) [0x7f3d4f556d44]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::options::OptionCollection::load(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool)+0x21b) [0x7f3d4f5ac4eb]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x17d) [0x7f3d4f5acdcd]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.6.so(core::init::init_options(int, char**)+0x24) [0x7f3d525c9a34]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.6.so(core::init::init(int, char**)+0x2b) [0x7f3d525cdffb]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3571) [0x559593743571]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f3d4efde0b3]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3a6e) [0x559593743a6e]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 573
+[START_MESSAGE]
+Option file open failed for: 'flag_prepack_flex'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.37+release.3ba1aaa
+[COMMIT_DATE]: 2020-09-09T03:36:18.109196
+[APPLICATION]: UNKNOWN APPLICATION
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "9.3.0"
+[STDLIB]: libstdc++ version 20200408
+[START_OPTIONS]
+NO OPTIONS SPECIFIED
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(backtrace_string[abi:cxx11](int)+0x5a) [0x7f1715b80eca]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x103) [0x7f1715b80593]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(+0x19dd44) [0x7f1715a62d44]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::options::OptionCollection::load(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool)+0x21b) [0x7f1715ab84eb]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::options::OptionCollection::load(int, char* const*, bool)+0x17d) [0x7f1715ab8dcd]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.6.so(core::init::init_options(int, char**)+0x24) [0x7f1718ad5a34]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.6.so(core::init::init(int, char**)+0x2b) [0x7f1718ad9ffb]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3571) [0x555a3ab8e571]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f17154ea0b3]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3a6e) [0x555a3ab8ea6e]
+
+[END_BACKTRACE]
+
+[FILE]: src/utility/options/OptionCollection.cc
+[LINE]: 573
+[START_MESSAGE]
+Option file open failed for: 'flag_prepack_flex'
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.37+release.3ba1aaa
+[COMMIT_DATE]: 2020-09-09T03:36:18.109196
+[APPLICATION]: lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "9.3.0"
+[STDLIB]: libstdc++ version 20200408
+[START_OPTIONS]
+ -in:path:database=lib/rosetta/database/ -in:file:s=structures/docked_intermediate/docked_file_wo_side_chain.pdb -in:file:native=structures/docked_intermediate/docked_file_wo_side_chain.pdb -out:nstruct=1 -out:suffix=flexpep_prepack -out:path:all=structures/docked_intermediate/ -packing:unboundrot=structures/docked_intermediate/docked_file_wo_side_chain.pdb -packing:ex1 -packing:ex2aro -flexPepDocking:pep_refine -flexPepDocking:flexpep_prepack
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(backtrace_string[abi:cxx11](int)+0x5a) [0x7f3644350eca]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x103) [0x7f3644350593]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x113) [0x7f364440a743]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x3b) [0x7f364440a50b]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libprotocols_c.6.so(protocols::flexpep_docking::FlexPepDockingFlags::FlexPepDockingFlags()+0x1e07) [0x7f36480adba7]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libprotocols_c.6.so(protocols::flexpep_docking::FlexPepDockingProtocol::FlexPepDockingProtocol(unsigned long, bool, bool)+0x5a) [0x7f36480d589a]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3595) [0x562420fcd595]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f3643cba0b3]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3a6e) [0x562420fcda6e]
+
+[END_BACKTRACE]
+
+[FILE]: src/protocols/flexpep_docking/FlexPepDockingFlags.cc
+[LINE]: 183
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Assertion `mut_ex_opts <= 1` failed. MSG:More than one mutually exclusive flags selected
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.37+release.3ba1aaa
+[COMMIT_DATE]: 2020-09-09T03:36:18.109196
+[APPLICATION]: lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "9.3.0"
+[STDLIB]: libstdc++ version 20200408
+[START_OPTIONS]
+ -in:path:database=lib/rosetta/database/ -in:file:s=prepacked_intermediate_after_docking/docked_file_wo_side_chain_flexpep_prepack_0001.pdb -in:file:native=docked_intermediate/docked_file_wo_side_chain.pdb -out:nstruct=100 -out:suffix=_flexpep_generation -out:file:silent=decoys.silent -out:file:silent_struct_type=binary -out:file:fullatom -out:path:all=structures/pep_docked_output/ -packing:use_input_sc -packing:unboundrot=docked_intermediate/docked_file_wo_side_chain.pdb -packing:ex1 -packing:ex2aro -flexPepDocking:pep_refine
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(backtrace_string[abi:cxx11](int)+0x5a) [0x7f1eae166eca]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x103) [0x7f1eae166593]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x113) [0x7f1eae220743]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x3b) [0x7f1eae22050b]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.3.so(core::io::pdb::build_pose_from_pdb_as_is(core::pose::Pose&, core::chemical::ResidueTypeSet const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, core::io::StructFileReaderOptions const&)+0x279) [0x7f1eb001c539]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.3.so(core::io::pdb::build_pose_from_pdb_as_is(core::pose::Pose&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, core::io::StructFileReaderOptions const&)+0x56) [0x7f1eb001c8e6]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.3.so(core::io::pdb::build_pose_from_pdb_as_is(core::pose::Pose&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x42) [0x7f1eb001cba2]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libcore.5.so(core::pack::rotamer_set::UnboundRotamersOperation::initialize_from_command_line()+0x656) [0x7f1eaa915676]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libprotocols_c.6.so(protocols::flexpep_docking::FlexPepDockingProtocol::set_default()+0x977) [0x7f1eb1ee9d57]
+/home/chem/rosetta/main/source/build/src/release/linux/5.4/64/x86/gcc/9/default/libprotocols_c.6.so(protocols::flexpep_docking::FlexPepDockingProtocol::FlexPepDockingProtocol(unsigned long, bool, bool)+0x4f2) [0x7f1eb1eebd32]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3595) [0x56299a64b595]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f1eadad00b3]
+lib/rosetta/source/bin/FlexPepDocking.linuxgccrelease(+0x3a6e) [0x56299a64ba6e]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/io/pdb/build_pose_as_is.cc
+[LINE]: 168
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot open file docked_intermediate/docked_file_wo_side_chain.pdb
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+

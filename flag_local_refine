@@ -1,0 +1,14 @@
+-in:file:s structures/mutated_intermediate/mutated_pmhc_complex.pdb
+
+-nstruct 100
+
+-docking_local_refine
+-use_input_sc
+-docking:partners=A_B
+
+-ex1
+-ex2aro
+
+-out:file:fullatom
+-out:path:all structures/docked_intermediate
+-out:suffix _local_refine

@@ -1,0 +1,14 @@
+-s structures/docked_intermediate/docked_file_wo_side_chain.pdb
+-native structures/docked_intermediate/docked_file_wo_side_chain.pdb
+-unboundrot structures/docked_intermediate/docked_file_wo_side_chain.pdb
+
+-nstruct 1
+
+-database lib/rosetta/database
+-flexpep_prepack
+
+-ex1
+-ex2aro
+
+-out:path:all structures/prepacked_intermediate_after_docking
+-out:suffix _flexpep_prepack
